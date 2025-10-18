@@ -560,5 +560,14 @@ INTRODUCTION
 
     -> Solutions for conditionals and loops tasks 
 
+17th Oct 2025
+=============
 
-        
+-> strings
+
+        --> strings are most widely used data types in python 
+        --> string is a sequence of characters which are enclosed in '' or "" (recommended)
+        -> we can enclose the string in """ """ also, bt recommended for multi line strings
+
+                -> single line string - single quots ('') or double ("")
+                -> Multi line string - single quots ('') or double ("")
