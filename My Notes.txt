@@ -233,6 +233,332 @@ INTRODUCTION
 
 ===========================================================================================
 
+9th Oct 2025
+============
+
+    -> Interpolation 
+
+        -> Interpolation technique replaces, place holders with
+            actual values dynamically
+
+        -> We can achieve Interpolation in python using 
+        f-strings (supports only from python 3)
+
+        -> f-strings (Formatted String Literals)
+
+        -> Syntax : 
+
+            -> We use {} as place holders     
+
+    -> To Manipulate Data (If Required) in Python, we need OPERATORS 
+
+
+    -> Operators
+
+        -> Operator are special symbols, performs operations 
+        on Variables and their Values 
+    
+    -> Operator Types 
+
+        -> Arithmetic Operators 
+
+            -> + - * / 
+            -> % : Modulus (Remainder)
+            -> // : Floor Division (same as division but rounds off result)
+            -> ** : Exponentiation (Calculate Power)
+
+            -> Calculate EMI for a product 
+
+                -> Actual Price
+                -> Down Payment 
+                -> Interest Rate 
+                -> Tenure (years)
+                -> Calculate EMI 
+
+        -> Assignment Operator (=)
+
+        -> Compound Assignment Operator 
+
+            -> Combine Arithmetic Operators with Assignment Operator
+
+            -> For Writing Concise Code (Short Hand Code)
+
+                -> x = 10
+                -> x = x + 5 (long form)
+                -> x += 5 (short form)
+
+                -> x = x * 5 
+                -> x *= 5 (short form)
+
+            -> Increment / Decrement : ++ -- 
+
+                -> Python Doesn't Support Above (++ -- )
+
+        -> Comparison Operators
+
+            -> Compare Values and results in boolean (True/False)
+            
+            -> Widely used in Conditionals 
+
+            == != > < >= <= 
+
+        -> Logical Operators
+
+            -> Used To Check Multiple Conditionals and 
+            results in boolean (True/False)
+
+            -> Widely used in Conditionals 
+
+            -> and : validates if both Conditions are True, then result is True
+            -> or : validates if one of the Conditions is True, then result is True
+            -> not : negates, if true then false and vice versa
+
+                X       Y       X and Y    X or Y    not X    not Y
+                T       T           T         T         F       F
+                T       F           F         T         F       T
+                F       T           F         T         T       F
+                F       F           F         F         T       T 
+
+        -> Membership Operators
+
+            -> Used to check if a sequence is present 
+
+                -> in : return True, if object is in given sequence
+
+                -> not in : return True, if object is not in given sequence
+
+10th Oct 2025
+=============
+
+    -> dir() : what kind of activities we can perform on a object 
+
+    -> Identity Operators
+
+        -> Used to compare (memory address)
+
+            -> is : returns True, if objects are same 
+            
+            -> is not : returns True, if objects are not same 
+
+    -> Bitwise Operators
+
+        -> Used in Low Level Programming (010101010)
+
+            -> & (AND) - sets each bit to 1, if both bits are 1
+            -> | (OR) - sets each bit to 1, if one of the bit is 1
+            -> etc 
+
+    -> Data Types 
+
+        -> Data Types are categories that define, what kind of data a Variable can hold 
+
+        -> Python is Dynamic Typed Language (dynamically assumes type)
+
+        -> Numeric Types 
+
+            -> int : whole numbers (1,2,3,0,-1 etc)
+            -> float : decimal numbers (1.1,2.2,3.0,10.0 etc)
+            -> complex : a + ib in math 
+                         a + bj in python    
+
+        -> Text Type
+
+            -> str : String is a sequence of characters enclosed in " " or ' '
+
+        -> Boolean Type 
+
+            -> bool : Represents True / False    
+        
+        -> None Type 
+
+            -> NoneType : Represents nothing i.e absence of value 
+
+        -> Sequence Types 
+
+            -> str is also a sequence type
+
+            -> List : Complex Datatype, holds multiple values, Represented using []
+
+            -> Tuple : Complex Datatype, holds multiple values, Represented using ()
+
+                -> List is Mutable (can be changed)
+
+                -> Tuple is Immutable (cannot be changed)
+
+        -> Set Type 
+
+            -> set : Complex Datatype, holds multiple values, Represented using { }
+
+        -> Map Type 
+
+            -> dict (dictionary) : Complex Datatype, holds multiple key values, Represented using { }
+            -> key:value (pair / item)
+
+    -> NOTE : Above data types are pre-defined in python standard library and are widely used 
+
+    -> NOTE : Based on custom Requirements, we can create our own data types also 
+
+        -> syntax 
+
+            class CustomDataType:
+                implementations
+    
+13th Oct 2025
+=============
+
+    -> Type Conversion / Implicit Conversion 
+
+        -> Type Conversion means python automatically converts one data type to another 
+
+        -> Python automatically performs Type Conversion as it's SAFE 
+
+    -> Type Casting / Explicit Conversion 
+
+        -> Type Casting means, you need to explicitly convert one data type to another 
+
+        -> Python doesn't automatically performs Type Casting as it's UNSAFE  (data loss)
+
+        -> We use some predefined functions to achieve Type Casting
+
+    -> Control Structures / Statements 
+
+        -> Till now the program executes sequentially line by line, now 
+        we want to control the flow of program
+
+        -> Python has given following  Control Structures
+
+            -> Conditional Statements (Decision Making Statements)
+
+            -> Looping Statements (Iteration Statements)
+
+            -> Branching Statements (Jump Statements)
+        
+        -> Indentation
+
+            -> Indentation refers to space (how to use spaces in programs)
+
+            -> When Working with Blocks (control Structures, functions, classes etc)
+
+            -> Either use a single or tab (don't use both, fix to one )
+
+                -> How many spaces ? 
+
+                    -> At least 1 (python recommended is 4 spaces i.e tab)
+            
+            -> All lines in the same block should have same indentation level 
+
+    -> Conditional Statements 
+
+        -> Conditional Statements / Decision Making Statements are used to run 
+            a block of code based on condition result 
+
+            -> if Statement : runs a block of code, only if the condition is True
+
+                -> syntax 
+                    if condition:
+                        Statements
+
+            -> if else Statement : runs a block of code, if the condition is True
+                                   runs another block of code, if the condition is False
+                
+                -> syntax 
+                    if condition:
+                        Statements
+                    else:
+                        Statements
+
+            -> NOTE: input() function reads the input from user / keyboard 
+
+            -> NOTE : ternary operator - same as if-else with short hand code (concise code)
+
+                        variable = value_if_true if condition else value_if_false 
+
+            -> elif ladder : runs blocks of code,  with multiple Conditional checks 
+
+14th Oct 2025
+=============
+
+    -> Other Programming Languages Like Java / C++ (switch case)
+
+    -> match-case was introduced in python 3.X Onwards
+
+    -> it's an alternative to elif approach 
+
+    -> Nested Conditionals 
+
+        -> Conditionals inside Conditionals
+
+
+    -> Looping Statements (Iteration Statements)
+
+        -> Loops - Execute a block of code repeatedly, based on
+                   condition 
+        
+        -> When To Use : When You want to repeat a task multiple times 
+
+        -> Types Of Loops 
+
+            -> while loop 
+
+                -> Runs/Repeats a block of code, as long as the condition is true 
+
+                -> You can use while loop, when you don't know number of iterations in advance 
+
+            -> for loop 
+
+                -> Used to iterate over a sequence data type (strings, lists etc)
+
+                -> You can use for loop, when you know number of iterations in advance 
+
+
+15th Oct 2025
+=============
+
+    -> for loop demo works with sequences i.e should have __iter__ (dir())
+
+    -> range() 
+
+        -> this function generates a sequence of numbers, mostly used With
+            loops and conditions
+
+        -> syntax 
+
+            range(start,stop,step) 
+                -> start default is 0 (included)
+                -> stop at this value (excluded)
+                -> step increment (default is 1)
+
+            range(5) # [0,1,2,3,4]
+            range(1,6) # [1,2,3,4,5]
+            range(2,10,1) # [2,3,4,5...9]
+            range(2,10,2) # [2,4,6...8]
+
+
+    -> Nested Loops 
+
+        -> Loops inside loops 
+
+        syntax for nested for loop 
+
+            for var_outer in range(choice):
+                for var_inner in range(choice):
+                    // logic
+
+16th Oct 2025
+=============    
+
+    -> Branching Statements (Jump Statements)
+
+        -> break : helps you exit loops
+
+        -> continue : helps you skip the current iteration in loop 
+
+        -> pass : acts as a placeholder, does nothing 
+
+17th Oct 2025
+=============
+
+    -> Solutions for conditionals and loops tasks 
 
 
         
