@@ -1,6 +1,9 @@
 # VARIABLES
 
-variable_name = "value" ("" if string)
+variable_name = "value" ("" if string)- (student_name = "Mona") #Assign data
+print(variable_name)- print(stundent_name) # Retrieve Data 
+print(id(variable_name))- print(id(student_name))-# Get Identity/Memory Address Of Variables
+print(type(variable_name)) - print(type(student_name)) # Get Data Type
 ==============================================================
 
 #OPERATORS
